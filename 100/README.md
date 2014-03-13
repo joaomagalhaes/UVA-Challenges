@@ -1,19 +1,20 @@
-#3 Link
+Link
+----
 
 http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=3&page=show_problem&problem=36
 
-#3 Background
+Background
+----------
 
-Problems in Computer Science are often classified as belonging to a certain class of problems (e.g., NP, Unsolvable, Recursive). 
-In this problem you will be analyzing a property of an algorithm whose classification is not known for all possible inputs.
+Problems in Computer Science are often classified as belonging to a certain class of problems (e.g., NP, Unsolvable, Recursive). In this problem you will be analyzing a property of an algorithm whose classification is not known for all possible inputs.
 
 The Problem
 -----------
 
 Consider the following algorithm:
-1. input n
-2. print n
-3. if n = 1 then STOP
+* 1. input n
+* 2. print n
+* 3. if n = 1 then STOP
 4. if n is odd then  n<-3n+1 
 5. else n<-n/2 
 6. GOTO 2
