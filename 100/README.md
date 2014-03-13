@@ -1,3 +1,8 @@
+Link
+——
+http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=3&page=show_problem&problem=36
+
+
 Background
 ----------
 
@@ -8,9 +13,7 @@ The Problem
 -----------
 
 Consider the following algorithm:
-
 1. input n
-
 2. print n
 3. if n = 1 then STOP
 4. if n is odd then  n<-3n+1 
