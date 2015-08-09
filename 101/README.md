@@ -6,21 +6,12 @@ https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=3
 Background
 ----------
 
-Many areas of Computer Science use simple, abstract domains for both analytical and empirical studies. For example, an early AI study of planning and robotics (STRIPS) used a block world in which a robot arm performed tasks involving the manipulation of blocks.<br><br>
-In this problem you will model a simple block world under certain rules and constraints. Rather than determine how to achieve a specified state, you will ``program'' a robotic arm to respond to a limited set of commands.
+Many areas of Computer Science use simple, abstract domains for both analytical and empirical studies. For example, an early AI study of planning and robotics (STRIPS) used a block world in which a robot arm performed tasks involving the manipulation of blocks.<br><br>In this problem you will model a simple block world under certain rules and constraints. Rather than determine how to achieve a specified state, you will ``program'' a robotic arm to respond to a limited set of commands.
 
 The Problem
 -----------
 
-The problem is to parse a series of commands that instruct a robot arm in how to manipulate blocks that lie on a flat table. Initially there are n blocks on the table (numbered from 0 to n-1) with block bi adjacent to block bi+1 for all  $0 \leq i < n-1$ as shown in the diagram below:
-
-The valid commands for the robot arm that manipulates blocks are:
-
-move a onto b
-where a and b are block numbers, puts block a onto block b after returning any blocks that are stacked on top of blocks a and b to their initial positions.
-
-move a over b
-where a and b are block numbers, puts block a onto the top of the stack containing block b, after returning any blocks that are stacked on top of block a to their initial positions.
+The problem is to parse a series of commands that instruct a robot arm in how to manipulate blocks that lie on a flat table. Initially there are n blocks on the table (numbered from 0 to n-1) with block bi adjacent to block bi+1 for all  $0 \leq i < n-1$ as shown in the diagram below:<br><br><center>diagram</center><br><br>The valid commands for the robot arm that manipulates blocks are:<br><br>move a onto b<br>where a and b are block numbers, puts block a onto block b after returning any blocks that are stacked on top of blocks a and b to their initial positions.<br><br>move a over b<br>where a and b are block numbers, puts block a onto the top of the stack containing block b, after returning any blocks that are stacked on top of block a to their initial positions.
 
 pile a onto b
 where a and b are block numbers, moves the pile of blocks consisting of block a, and any blocks that are stacked above block a, onto block b. All blocks on top of block b are moved to their initial positions prior to the pile taking place. The blocks stacked above block a retain their order when moved.
